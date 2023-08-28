@@ -1,0 +1,26 @@
+// font style
+@import "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Shrikhand&display=swap";
+
+// bootstrap
+@import "bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/root";
+@import "./helpers/utilities";
+@import "bootstrap/scss/bootstrap";
+
+// base
+@import "./base/base";
+
+// layout
+@import "./layout/header";
+@import "./layout/footer";
+
+// components
+@import "./components/btn";
+
+// pages
+@import "./pages/sample";
+@import "./pages/index";

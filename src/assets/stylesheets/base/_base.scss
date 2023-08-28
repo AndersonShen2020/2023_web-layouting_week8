@@ -1,0 +1,16 @@
+:root {
+  --bg-gradient-liner: linear-gradient(180deg, #7000ff 0%, rgba(17, 0, 45) 100%);
+  --bg-gradient-radial: radial-gradient(50% 50% at 50% 50%, #28085c 0%, rgba(0, 0, 0) 100%);
+}
+
+.font-tw {
+  font-family: "Noto Sans TC", sans-serif !important;
+}
+
+.font-en {
+  font-family: Shrikhand, cursive !important;
+}
+
+.object-cover {
+  object-fit: cover;
+}
