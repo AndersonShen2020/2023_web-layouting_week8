@@ -58,8 +58,7 @@ $utilities: map-merge(
       print: true,
       property: display,
       class: d,
-      values: inline inline-block block grid inline-grid table table-row table-cell flex inline-flex
-        none
+      values: inline inline-block block grid inline-grid table table-row table-cell flex inline-flex none
     ),
     "shadow": (
       property: box-shadow,
@@ -112,8 +111,7 @@ $utilities: map-merge(
       property: border,
       responsive: true,
       values: (
-        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style)
-          var(--#{$prefix}border-color),
+        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
         0: 0
       )
     ),
@@ -121,8 +119,7 @@ $utilities: map-merge(
       property: border-top,
       responsive: true,
       values: (
-        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style)
-          var(--#{$prefix}border-color),
+        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
         0: 0
       )
     ),
@@ -131,8 +128,7 @@ $utilities: map-merge(
       responsive: true,
       class: border-end,
       values: (
-        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style)
-          var(--#{$prefix}border-color),
+        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
         0: 0
       )
     ),
@@ -140,8 +136,7 @@ $utilities: map-merge(
       property: border-bottom,
       responsive: true,
       values: (
-        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style)
-          var(--#{$prefix}border-color),
+        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
         0: 0
       )
     ),
@@ -150,8 +145,7 @@ $utilities: map-merge(
       responsive: true,
       class: border-start,
       values: (
-        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style)
-          var(--#{$prefix}border-color),
+        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
         0: 0
       )
     ),
@@ -731,9 +725,7 @@ $utilities: map-merge(
       property: background-image,
       class: bg,
       values: (
-        gradient: var(--#{$prefix}gradient),
-        gradient-liner: linear-gradient(180deg, #7000ff 0%, rgba(17, 0, 45) 100%),
-        gradient-radial: radial-gradient(50% 50% at 50% 50%, #28085c 0%, rgba(0, 0, 0) 100%)
+        gradient: var(--#{$prefix}gradient)
       )
     ),
     "user-select": (

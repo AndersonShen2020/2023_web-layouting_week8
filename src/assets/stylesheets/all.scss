@@ -5,6 +5,11 @@
 @import "bootstrap/scss/functions";
 @import "./helpers/variables";
 @import "bootstrap/scss/variables-dark";
+
+// utils
+@import "./utils/custom-colors";
+
+// bootstrap
 @import "bootstrap/scss/maps";
 @import "bootstrap/scss/mixins";
 @import "bootstrap/scss/root";
@@ -20,6 +25,9 @@
 
 // components
 @import "./components/btn";
+
+// mixins
+@import "./mixins/bg-gradient";
 
 // pages
 @import "./pages/sample";
