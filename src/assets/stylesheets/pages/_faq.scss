@@ -1,0 +1,61 @@
+.letter-spacing-12 {
+  letter-spacing: $spacer * 3;
+}
+
+.border-dotted-bottom {
+  border-bottom: 2px dotted $white;
+}
+
+.border-bottom-primary300 {
+  border-bottom: 1px solid $primary-300;
+}
+
+.faq {
+  color: $primary-300;
+
+  a {
+    color: $primary-300;
+  }
+
+  .accordion {
+    --bs-accordion-color: $primary-300;
+    --bs-accordion-bg: transparent;
+
+    &-item,
+    &-item:last-child {
+      border-bottom: 2px dotted $white;
+    }
+
+    &-button {
+      .addIcon {
+        font-size: $h11-font-size;
+        display: inline-block;
+      }
+
+      .closeIcon {
+        font-size: $h11-font-size;
+        display: none;
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+
+      &::after {
+        content: none;
+      }
+
+      &:not(.collapsed) {
+        background-color: transparent;
+
+        .addIcon {
+          display: none;
+        }
+
+        .closeIcon {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
