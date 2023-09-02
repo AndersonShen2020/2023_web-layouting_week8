@@ -1,1 +1,20 @@
-
+.btn {
+  &-alphabox {
+    padding: 4px 80px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    &:hover {
+      color: #7000ff;
+      background-color: #fff;
+    }
+    &:active {
+      color: #000 !important;
+      background-color: #fff !important;
+    }
+    &-active {
+      color: #000;
+      background-color: #fff;
+    }
+  }
+}
