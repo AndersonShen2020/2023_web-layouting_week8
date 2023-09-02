@@ -1,5 +1,6 @@
 // font style
-@import "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Shrikhand&family=Saira+Extra+Condensed:wght@300&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Shrikhand&family=Saira+Extra+Condensed:wght@300&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" ;
 
 // bootstrap
 @import "bootstrap/scss/functions";
@@ -33,3 +34,4 @@
 @import "./pages/sample";
 @import "./pages/index";
 @import "./pages/faq";
+@import "./pages/news";
