@@ -113,7 +113,7 @@ function setSlideToFirst() {
       {{ $route.params.productName }} - {{ productInfo[$route.params.productName].type }} -
       {{ productInfo[$route.params.productName].do }}
     </p> -->
-    <div class="d-flex flex-column flex-lg-row">
+    <div class="d-flex flex-column flex-lg-row bg-dark text-white">
       <div class="product-swiper-side">
         <Swiper
           :modules="modules"
@@ -138,10 +138,11 @@ function setSlideToFirst() {
           </SwiperSlide>
         </Swiper>
       </div>
-      <div class="product-info-side">
-        <p>{{ $route.params.productName }}</p>
+      <div class="product-info-side d-flex flex-column justify-content-center">
+        <h2>{{ $route.params.productName }}</h2>
         <p>{{ productInfo[$route.params.productName].type }}</p>
         <p>{{ productInfo[$route.params.productName].do }}</p>
+        <div class="arrow-right mt-lg-4 mt-2 ms-lg-1"></div>
       </div>
     </div>
   </main>

@@ -40,7 +40,28 @@
 }
 .product-info-side {
   width: 100%;
+  padding: 16px 12px;
   @include media-breakpoint-up(lg) {
     width: 50%;
+    padding: 40px;
+  }
+  h2 {
+    font-size: 40px;
+    line-height: 1.5;
+    @include media-breakpoint-up(lg) {
+      font-size: 64px;
+    }
+  }
+  p {
+    margin-bottom: 0;
+  }
+  .arrow-right {
+    padding: 12px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="306" height="14" viewBox="0 0 306 14" fill="none"><path d="M283.55 13.8938L290.486 8.24316H0.0500488V6.3596H290.486L283.55 0.708916L305.825 7.30138L283.55 13.8938Z" fill="white"/></svg>');
+    background-repeat: no-repeat;
+    background-size: 90px;
+    @include media-breakpoint-up(lg) {
+      background-size: 306px;
+    }
   }
 }
