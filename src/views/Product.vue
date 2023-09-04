@@ -1,6 +1,5 @@
 <script setup>
-import { onMounted, watch, ref } from "vue";
-import { useRoute } from "vue-router";
+import { ref } from "vue";
 
 // import Swiper core and required modules
 import { Navigation } from "swiper/modules";
@@ -14,8 +13,6 @@ import "swiper/css/navigation";
 
 // util
 import { getAssetsFile } from "@/util/pub-use";
-
-const route = useRoute();
 
 const modules = [Navigation];
 
@@ -49,19 +46,8 @@ const productInfo = {
 const swiperDom = ref(null);
 function setSlideToFirst() {
   // 當變更產品時，Swiper 會跳回到第一張圖片
-  swiperDom.value.$el.swiper.slideTo(0);
+  swiperDom.value.$el.swiper.slideTo(0, 0);
 }
-
-// onMounted(() => {
-//   console.log(swiperDom);
-// });
-
-// watch(
-//   () => route.params,
-//   () => {
-//     console.log(route.params.productName);
-//   }
-// );
 </script>
 
 <template>
@@ -108,11 +94,6 @@ function setSlideToFirst() {
         </RouterLink>
       </li>
     </ul>
-    <!-- <h1>UserID: {{ $route.params.productName }}</h1> -->
-    <!-- <p>
-      {{ $route.params.productName }} - {{ productInfo[$route.params.productName].type }} -
-      {{ productInfo[$route.params.productName].do }}
-    </p> -->
     <div class="d-flex flex-column flex-lg-row bg-dark text-white">
       <div class="product-swiper-side">
         <Swiper
@@ -138,11 +119,16 @@ function setSlideToFirst() {
           </SwiperSlide>
         </Swiper>
       </div>
-      <div class="product-info-side d-flex flex-column justify-content-center">
+      <div class="product-info-side d-flex flex-column justify-content-center position-relative">
         <h2>{{ $route.params.productName }}</h2>
         <p>{{ productInfo[$route.params.productName].type }}</p>
         <p>{{ productInfo[$route.params.productName].do }}</p>
         <div class="arrow-right mt-lg-4 mt-2 ms-lg-1"></div>
+        <img
+          class="align-self-center align-self-lg-start mt-4 mt-lg-0"
+          src="../assets/img/circle2.svg"
+          alt="alphabox-circle"
+        />
       </div>
     </div>
   </main>
