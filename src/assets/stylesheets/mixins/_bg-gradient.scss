@@ -7,3 +7,8 @@
 @mixin gradient-y($start-color: $primary, $end-color: $secondary) {
   background-image: linear-gradient(to bottom, $start-color, $end-color);
 }
+
+// 放射狀的漸層
+@mixin gradient-r($start-color: $primary, $end-color: $secondary) {
+  background-image: radial-gradient(50% 50% at 50% 50%, $start-color, $end-color);
+}
