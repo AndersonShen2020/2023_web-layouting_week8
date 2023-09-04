@@ -541,7 +541,7 @@ $utilities: map-merge(
       )
     ),
     "font-size": (
-      rfs: true,
+      rfs: false,
       property: font-size,
       class: fs,
       values: $font-sizes,
