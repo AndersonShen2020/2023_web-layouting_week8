@@ -1,1 +1,9 @@
+.index {
+  &-news {
+    @include gradient-r(#28085c 0%, #000 100%);
+  }
 
+  &-share {
+    @include gradient-r(#000000 0%, #28085c 100%);
+  }
+}
