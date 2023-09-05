@@ -1,6 +1,50 @@
 header {
-  .icon{
+  .icon {
     vertical-align: text-top;
     margin-right: 4px;
   }
+
+  .navbar-toggler{
+    border:none;
+    color: rgba(var(--bs-primary-rgb));
+  }
+
+
+  @media (max-width: 992px) {
+    .navbar-toggler-icon{
+      background-image: none;
+      font-size: 44px;
+      height: 44px;
+      width: 44px;
+      &::before{
+        content: 'menu';
+        color: white;
+      }
+    }
+    .navbar-collapse {
+      position: absolute;
+      padding: 24px 12px;
+      background-image: linear-gradient(to bottom, rgba(var(--bs-primary-rgb)), $primary-300);
+      width: 100%;
+      left: 0;
+      top: 0;
+      transform: translateY(69px);
+      z-index: 999;
+      .navbar-nav {
+        gap: 0 !important;
+
+        .nav-item {
+          width: 100%;
+          text-align: center;
+          margin-bottom: 8px;
+
+          &:last-child {
+            width: auto;
+          }
+        }
+      }
+    }
+
+  }
+
 }
