@@ -51,7 +51,7 @@ function setSlideToFirst() {
 </script>
 
 <template>
-  <main>
+  <main class="product">
     <!-- Navbar -->
     <ul class="list-unstyled d-flex justify-content-center bg-dark py-4 gap-md-6 gap-2 mb-0">
       <li>
@@ -148,7 +148,7 @@ function setSlideToFirst() {
         <div class="col-lg-4 col-12">
           <p class="fw-medium mb-0">
             歡迎來到ALPHABOX+的全新世界！在這裡，我們很榮幸地向您介紹我們的最新力作 -
-            3D立體投影機器人 Felix！
+            3D立體投影機器人 {{ $route.params.productName }}！
           </p>
         </div>
       </div>
@@ -169,9 +169,7 @@ function setSlideToFirst() {
             人性化的互動設計
           </h3>
           <p class="mt-lg-6 mt-4 mb-0">
-            {{
-              $route.params.productName
-            }}
+            {{ $route.params.productName }}
             具有高度智能的語音辨識和回應功能，您可以像跟朋友聊天一樣，與
             {{ $route.params.productName }}
             進行自然、流暢的對話。
@@ -191,7 +189,7 @@ function setSlideToFirst() {
             高度自主性
           </h3>
           <p class="mt-lg-6 mt-4 mb-0">
-            Felix
+            {{ $route.params.productName }}
             具有強大的自主學習能力，能夠不斷地學習並優化自己，為您創造更加便捷、貼心的生活方式。
           </p>
         </li>
@@ -200,14 +198,85 @@ function setSlideToFirst() {
             簡單易用的操作界面
           </h3>
           <p class="mt-lg-6 mt-4 mb-0">
-            {{
-              $route.params.productName
-            }}
+            {{ $route.params.productName }}
             擁有直觀的操作界面，讓您可以輕鬆地掌握並運用它的各種功能。
           </p>
         </li>
       </ul>
     </div>
     <!-- 使用分享 -->
+    <div class="wrapper">
+      <div class="container overflow-hidden font-tw text-white">
+        <h2 class="fs-lg-9 fs-11 lh-base letter-spacing-lg-12 letter-spacing-10 mb-0">使用分享</h2>
+        <div class="row mt-lg-3 mt-4">
+          <div class="col-12 col-lg-4">
+            <p class="mb-0">展示其他使用者對於產品的真實體驗與評價，讓您更加放心選擇。</p>
+          </div>
+        </div>
+        <div class="row gy-lg-0 gy-6 mt-lg-20 mt-0 fw-bold">
+          <div class="col-lg-4 col-12">
+            <div
+              class="d-flex flex-column justify-content-between bg-primary-200 share-box p-lg-10 p-6"
+            >
+              <div class="share-info">
+                <h3 class="fs-17 mb-0">Zichi <span class="ellipse-1 mx-2"></span> Kaohsiung</h3>
+                <p class="mt-8 mb-0">
+                  自從家裡有了{{
+                    $route.params.productName
+                  }}，孩子們的學習興趣提高了不少，他們都喜歡透過{{
+                    $route.params.productName
+                  }}的3D立體投影來探索新知識，家庭氛圍變得更加和樂融融！
+                </p>
+              </div>
+              <p class="mb-0">
+                <span class="ellipse-2"></span>
+                <span class="ellipse-2 mx-4"></span>
+                ALPHABOX+ Felix
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12">
+            <div
+              class="d-flex flex-column justify-content-between bg-white text-black share-box p-lg-10 p-6"
+            >
+              <div class="share-info">
+                <h3 class="fs-17 mb-0">Lee <span class="ellipse-3 mx-2"></span> Chiayi</h3>
+                <p class="mt-8 mb-0">
+                  自從公司引入 {{ $route.params.productName }}，員工的工作效率提升了很多。{{
+                    $route.params.productName
+                  }}
+                  不僅能快速回應我們的需求，還可以協助我們做各種商業展示，真的是企業的好幫手！
+                </p>
+              </div>
+              <p class="mb-0">
+                <span class="ellipse-4"></span>
+                <span class="ellipse-4 mx-4"></span>
+                ALPHABOX+ Felix
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12">
+            <div
+              class="d-flex flex-column justify-content-between bg-primary-200 share-box p-lg-10 p-6"
+            >
+              <div class="share-info">
+                <h3 class="fs-17 mb-0">瑞 <span class="ellipse-1 mx-2"></span> Taipei</h3>
+                <p class="mt-8 mb-0">
+                  {{ $route.params.productName }}
+                  讓教學變得更生動有趣，學生們在課堂上的參與度和學習效果都有顯著提升。我非常推薦{{
+                    $route.params.productName
+                  }}給所有的教育工作者！
+                </p>
+              </div>
+              <p class="mb-0">
+                <span class="ellipse-2"></span>
+                <span class="ellipse-2 mx-4"></span>
+                ALPHABOX+ Felix
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 </template>

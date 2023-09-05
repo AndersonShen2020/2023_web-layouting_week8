@@ -832,6 +832,7 @@ $utilities: map-merge(
       values: $zindex-levels
     ),
     "letter-spacing": (
+      responsive: true,
       property: letter-spacing,
       values: (
         4: $spacer,
