@@ -3,11 +3,17 @@
 
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
-import { Scrollbar } from "swiper/modules";
+import { Scrollbar, Navigation, Autoplay } from "swiper/modules";
+
+// util
+import { getAssetsFile } from "@/util/pub-use";
+import { RouterLink } from "vue-router";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/scrollbar";
+import "swiper/css/navigation";
+import "swiper/css/autoplay";
 
 const modules = [Scrollbar];
 
@@ -46,7 +52,37 @@ const shares = [
     alphbox: "Vito",
     colorTheme: "light",
     content:
-      "讓我在忙碌的工作之餘，也能找到休閒的樂趣。它的互動功能非常有趣，讓我在短短的時間內就愛上了它。給它一百分！"
+      "讓我在忙碌的工作之餘，也能找到休閒的樂趣。它的互動功能非常有趣，讓我在短短的時間內就愛上了它。給它一百分！"}]
+
+
+const modulesF = [Navigation, Autoplay];
+
+const events = [
+  {
+    imageUrl: "swiper-slide.png",
+    alt: "01"
+  },
+  {
+    imageUrl: "swiper-slide.png",
+    alt: "02"
+  },
+  {
+    imageUrl: "swiper-slide.png",
+    alt: "03"
+  }
+];
+const eventsSm = [
+  {
+    imageUrl: "swiper-slide-sm.png",
+    alt: "01"
+  },
+  {
+    imageUrl: "swiper-slide-sm.png",
+    alt: "02"
+  },
+  {
+    imageUrl: "swiper-slide-sm.png",
+    alt: "03"
   }
 ];
 </script>
@@ -56,6 +92,238 @@ const shares = [
     <!-- swiper 範例 -->
 
     <!-- section1 -->
+    <div>
+      <!-- 背景 1-->
+      <!-- 小背景 1 -->
+      <div
+        class="d-md-none pos-absolute z-auto container-fluid h-474 px-0"
+        style="background: linear-gradient(180deg, #7000ff 0%, #11002d 100%); height: 474.13333vw"
+      ></div>
+      <!-- 大背景 1 -->
+      <div
+        class="d-none d-md-block container-fluid px-0 pos-absolute z-auto h-md-78 h-lg-67 h-xl-61 h-xxl-56 h-xxxl-45"
+      >
+        <img
+          class="img-fit"
+          src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/home_background.png?raw=true"
+          alt="bg"
+        />
+      </div>
+      <!-- 背景 2-->
+      <!-- 小背景 2-->
+      <div class="d-block d-md-none pos-absolute child-align-horizon-center z-auto h-210 h-smp-190 h-sm2p-126 h-sm3p-118 h-sm4p-110 top-sm-474 top-smp-465 top-sm2p-438 top-sm3p-435 top-sm4p-428">
+        <img  class="img-fit"  src="https://i.imgur.com/fcze51K.png" alt="swiper-bg">
+      </div>
+      <!--  大背景 2-->
+      <div
+        class="d-none d-md-block pos-absolute child-align-horizon-center z-auto h-md-87 h-lg-77 h-xl-71 h-xxl-66 h-xxxl-64 h-4xl top-md-78 top-lg-67 top-xl-61 top-xxl-56 top-xxxl-45"
+        style="background: radial-gradient(50% 50% at 50% 50%, #300871 0%, #000 100%)"
+      ></div>
+      <!-- z-100 swiper 背景-->
+      <div
+        class="d-none d-md-block pos-absolute top-md-89 top-lg-74 top-xl-66 top-xxl-53 top-xxxl-50 top-4xl-43 left-n160 right-0 z-100 container maw-1760px"
+      >
+        <div class="row">
+          <img
+            class="maw-md-948 px-0 mah-md-1089"
+            src="https://i.imgur.com/fcze51K.png"
+            alt="carousel-bg"
+          />
+        </div>
+      </div>
+
+      <!-- z-200 section 1 主要內容   -->
+      <div
+        class="pos-relative z-200 child-align-horizon-center container maw-1760px pt-7 pt-md-14 border-top-1"
+      >
+        <!-- 字與旋轉 -->
+        <div class="row flex-column-reverse flex-md-row mb-8 mb-md-14">
+          <div class="d-none d-md-flex col-md-3 ps-0 flex-column justify-content-end">
+            <p class="mb-0 border-bottom-1 pb-2 text-white font-tw">
+              最新消息！新版本 v15.4 釋出，搶先體驗！
+            </p>
+          </div>
+          <div class="col-12 col-md-6 container text-center my-8 my-md-0">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/circle.png?raw=true"
+              alt="ALPHABOX+"
+              class="alphabox-circle img-fluid mx-auto"
+            />
+          </div>
+          <div class="col-12 col-md-3 pe-md-0 d-flex flex-column justify-content-between">
+            <p class="border-top-1 pt-2 pt-md-1 text-white font-tw mt-1 mt-md-0 fw-bold">
+              ALPHABOX+ STUDIO
+            </p>
+            <p class="d-none d-md-block mb-0 text-hidden-pruple font-tw">
+              Copyright © 2023 Hexschool.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="d-md-none col-12">
+            <p class="text-center text-white fs-16 letter-spacing-4d8 letter-spacing-sm-26 text-indent-6 mb-0">
+              ALPHABOX+
+            </p>
+            <p class="text-center text-white font-tw fw-bold letter-spacing-4d8 mb-4">
+              擁抱未來科技，專屬您的3D立體投影<br />陪伴機器人
+            </p>
+          </div>
+        </div>
+        <!-- 人像展示-->
+        <div
+          class="d-flex flex-column flex-md-row justify-content-md-between maw-1760px mx-md-n3 mb-8"
+        >
+          <!-- Diane-->
+          <div class="pos-relative w-md-416 mt-4 mt-md-0">
+            <a class="photo d-block" href="#"><img
+              class="d-none d-md-block img-fit"
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane.png?raw=true"
+              alt="Diane"
+            /></a>
+            <img
+              class="d-md-none img-fit"
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane_square1.png?raw=true"
+              alt="Diane"
+            />
+            <p class="pos-absolute top-16 left-0 right-0 text-center fs-13 text-white">Diane</p>
+          </div>
+          <!-- Felix and Karina-->
+          <div class="d-flex flex-md-column w-md-864">
+            <div class="d-flex flex-column">
+              <p
+                class="d-none d-md-block text-center text-white fs-16 fs-md-13 letter-spacing-22 letter-spacing-xxxl-80 text-indent-8 mb-0 font-style-normal"
+              >
+                ALPHABOX+
+              </p>
+              <p
+                class="d-none d-md-block text-center text-white font-tw fw-bold letter-spacing-4d8 letter-spacing-md-16 text-indent-md-48 mb-6"
+              >
+                擁抱未來科技，專屬您的3D立體投影陪伴機器人
+              </p>
+            </div>
+            <div class="d-flex flex-column flex-md-row justify-content-md-between mt-4 mt-md-0">
+              <div class="pos-relative w-md-48">
+                <a class="photo d-block" href="#"><img
+                  class="d-none d-md-block img-fit"
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/felix.png?raw=true"
+                  alt="Felix"
+                /></a>
+                <img
+                  class="d-md-none img-fit"
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/felix_square1.png?raw=true"
+                  alt="Felix"
+                />
+                <p class="pos-absolute top-16 left-0 right-0 text-center fs-13 text-white">Felix</p>
+              </div>
+              <div class="pos-relative mt-4 mt-md-0 w-md-48">
+                <a class="photo d-block" href="#"><img
+                  class="d-none d-md-block img-fit"
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/karina.png?raw=true"
+                  alt="Karina"
+                /></a>
+                <img
+                  class="d-md-none img-fit"
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/karina_square1.png?raw=true"
+                  alt="Karina"
+                />
+                <p class="pos-absolute top-16 left-0 right-0 text-center fs-13 text-white">
+                  Karina
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Vito      -->
+          <div class="pos-relative w-md-416 mt-4 mt-md-0">
+            <a class="photo d-block" href="#"><img
+              class="d-none d-md-block img-fit"
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/vito.png?raw=true"
+              alt="Vito"
+            /></a>
+            <img
+              class="d-md-none img-fit"
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/vito_square1.png?raw=true"
+              alt="Vito"
+            />
+            <p class="pos-absolute top-16 left-0 right-0 text-center fs-13 text-white">Vito</p>
+          </div>
+        </div>
+        <div class="row px-3 px-md-0">
+          <div
+            class="col-12"
+            style="background: linear-gradient(90deg, #7000ff 0%, #11002d 100%); height: 40px"
+          ></div>
+        </div>
+      </div>
+      <div class="pos-relative z-200 child-align-horizon-center container maw-1760px px-md-0">
+        <p
+          class="text-white font-tw fs-15 fs-md-9 letter-spacing-24 letter-spacing-md-48 mt-2 mb-3"
+        >
+          什麼是
+        </p>
+        <p
+          class="text-white font-tw fs-15 fs-md-9 letter-spacing-4d8 letter-spacing-sm-24 letter-spacing-md-48 mb-5 mb-md-4"
+        >
+          ALPHABOX+
+        </p>
+      </div>
+      <!--   切開   -->
+      <div class="pos-relative z-200 mb-4 mb-md-8" style="border-bottom: 1px solid white"></div>
+      <!--   swiper 區塊 -->
+      <!--   swiper-sm -->
+      <div class="d-md-none container my-8 sample swiper-sm z-200 pos-relative">
+        <Swiper
+          :modules="modulesF"
+          :slides-per-view="1"
+          :space-between="50"
+          :navigation="false"
+          :loop="true"
+          :autoplay="{
+            delay: 2500,
+            disableOnInteraction: true
+          }"
+        >
+          <SwiperSlide v-for="event in eventsSm" :key="event.alt">
+            <div class="card" style="border: 0">
+              <img :src="getAssetsFile(event.imageUrl)" :alt="event.alt" />
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </div>
+      <!--   swiper-lg -->
+      <div class="d-none d-md-block container my-8 z-200 pos-relative maw-1760 swiper-outter">
+        <Swiper
+          :modules="modulesF"
+          :slides-per-view="1"
+          :space-between="50"
+          :navigation="true"
+          :loop="true"
+          :autoplay="{
+            delay: 2500,
+            disableOnInteraction: true
+          }"
+        >
+          <SwiperSlide v-for="event in events" :key="event.alt">
+            <div class="card swiper-lg-slide-padding pos-relative" style="background: transparent; border: 0">
+              <img :src="getAssetsFile(event.imageUrl)" :alt="event.alt" />
+              <div class="pos-absolute z-200 container content-fit d-flex flex-column align-items-end justify-content-center pe-10">
+                <h2 class="text-white fs-96 lh-1d5">01</h2>
+                <p class="text-white fs-13 text-end letter-spacing-32 me-n32 fw-bold">立體投影技術</p>
+                <p class="text-white fw-bold">透過高科技立體投影技術，讓您感受真實的科技世界。</p>
+              </div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </div>
+    </div>
+    <div class="pos-relative z-200 child-align-horizon-center container maw-1760px mb-15 mb-md-13">
+      <div class="row px-3 px-md-0">
+        <div
+          class="col-12"
+          style="background: linear-gradient(270deg, #7000ff 0%, #11002d 100%); height: 40px"
+        ></div>
+      </div>
+    </div>
 
     <!-- section2 -->
 
