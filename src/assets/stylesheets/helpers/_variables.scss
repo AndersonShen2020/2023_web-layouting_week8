@@ -448,8 +448,9 @@ $spacers: (
   15: $spacer * 3.75,
   16: $spacer * 4,
   20: $spacer * 5,
+  26: $spacer * 6.5,
   30: $spacer * 7.5,
-  40: $spacer * 10,
+  40: $spacer * 10
 ) !default; // *custom
 // scss-docs-end spacer-variables-maps
 
@@ -702,6 +703,7 @@ $h14-font-size: $font-size-base * 1.75 !default; // 28px
 $h15-font-size: $font-size-base * 1.5 !default; //  24px
 $h16-font-size: $font-size-base * 1.25 !default; // 20px
 $h17-font-size: $font-size-base !default; //        16px
+$h18-font-size: $font-size-base * 0.875 !default; //        14px
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -730,7 +732,8 @@ $font-sizes: (
   14: $h14-font-size,
   15: $h15-font-size,
   16: $h16-font-size,
-  17: $h17-font-size
+  17: $h17-font-size,
+  18: $h18-font-size
 ) !default; // *custom
 // scss-docs-end font-sizes
 

@@ -4,32 +4,34 @@ header {
     margin-right: 4px;
   }
 
-  .navbar-toggler{
-    border:none;
+  .navbar-toggler {
+    border: none;
     color: rgba(var(--bs-primary-rgb));
   }
 
-
-  @media (max-width: 992px) {
-    .navbar-toggler-icon{
+  @media (max-width: 1199px) {
+    .navbar-toggler-icon {
       background-image: none;
       font-size: 44px;
       height: 44px;
       width: 44px;
-      &::before{
+
+      &::before {
         content: 'menu';
         color: white;
       }
     }
+
     .navbar-collapse {
+      @include gradient-y($start-color: #7000FF, $end-color: #11002D);
       position: absolute;
       padding: 24px 12px;
-      background-image: linear-gradient(to bottom, rgba(var(--bs-primary-rgb)), $primary-300);
       width: 100%;
       left: 0;
       top: 0;
       transform: translateY(69px);
       z-index: 999;
+
       .navbar-nav {
         gap: 0 !important;
 
@@ -44,7 +46,5 @@ header {
         }
       }
     }
-
   }
-
 }

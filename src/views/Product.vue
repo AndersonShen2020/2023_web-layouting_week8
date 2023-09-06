@@ -17,41 +17,46 @@ watch(
 </script>
 
 <template>
-  <main>
-    <ul class="list-unstyled d-flex justify-content-center bg-dark py-4 gap-md-6 gap-2">
+  <main class="product">
+    <!-- Navbar -->
+    <ul class="list-unstyled d-flex justify-content-center bg-dark py-4 gap-md-6 gap-2 mb-0">
       <li>
         <RouterLink
           class="btn btn-alphabox"
           :class="{ 'btn-alphabox-active': $route.params.productName === 'Diane' }"
           :to="`/product/Diane`"
-          >Diane</RouterLink
         >
+          Diane
+        </RouterLink>
       </li>
       <li>
         <RouterLink
           class="btn btn-alphabox"
           :class="{ 'btn-alphabox-active': $route.params.productName === 'Felix' }"
           :to="`/product/Felix`"
-          >Felix</RouterLink
         >
+          Felix
+        </RouterLink>
       </li>
       <li>
         <RouterLink
           class="btn btn-alphabox"
           :class="{ 'btn-alphabox-active': $route.params.productName === 'Karina' }"
           :to="`/product/Karina`"
-          >Karina</RouterLink
         >
+          Karina
+        </RouterLink>
       </li>
       <li>
         <RouterLink
           class="btn btn-alphabox"
           :class="{ 'btn-alphabox-active': $route.params.productName === 'Vito' }"
           :to="`/product/Vito`"
-          >Vito</RouterLink
         >
+          Vito
+        </RouterLink>
       </li>
     </ul>
-    <h1>UserID: {{ $route.params.productName }}</h1>
+    <RouterView />
   </main>
 </template>

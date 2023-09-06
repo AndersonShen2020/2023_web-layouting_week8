@@ -1,9 +1,7 @@
 <template>
   <div class="faq bg-light">
     <div class="container font-tw pt-15 pb-20 pt-lg-16 pb-lg-30">
-      <h2
-        class="fs-h11 fs-lg-h9 fw-black letter-spacing-12 pb-10 pb-lg-16 mb-0 border-dotted-bottom"
-      >
+      <h2 class="fs-11 fs-lg-9 fw-black letter-spacing-12 pb-10 pb-lg-16 mb-0 border-dotted-bottom">
         FAQ
       </h2>
       <div class="row fw-medium">

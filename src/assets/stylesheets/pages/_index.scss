@@ -1,6 +1,7 @@
 .section5{
   background: $primary-300;
   .title{
+    letter-spacing: 48px;
     &::before{
       content: '';
       position: absolute;
@@ -17,16 +18,19 @@
       width: 124px;
       height: 12px;
       border-radius: 12px;
-      transform: translate(-205px, 80px);
+      transform: translate(-364px, 80px);
     }
   }
   .icon{
-    // background-color: $primary-100;
     vertical-align: text-top;
     margin-right: 4px;
   }
 
-
+  @media (max-width: 768px) {
+    .btn{
+      width: 100% !important;
+    }
+  }
 }
 
 .section6{
@@ -129,8 +133,6 @@
       }
     }
   }
-
-
   .title-fs{
     font-size: 400px;
   }

@@ -1,0 +1,30 @@
+.aboutus-title{
+  @include gradient-r(#28085c 0%, #000 100%);
+}
+
+.aboutus-content{
+  max-width: 1784px;
+  padding-left: 12px;
+  padding-right: 12px;
+  h2{
+    letter-spacing:6rem;
+  }
+  .top{
+    border-bottom: 12px solid black;
+  }
+}
+
+.aboutus-recruit{
+  .btn{
+    &:hover{
+      border:1px solid #7000ff;
+      background-color: #7000ff;
+      color: white;
+    }
+  }
+  .icon{
+    vertical-align: text-top;
+    margin-right: 4px;
+  }
+}
+

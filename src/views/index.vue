@@ -16,34 +16,27 @@
         <div class="row">
 
           <div class="text-white col-md-5 ">
-            <p class="fs-12 py-3 fw-bold mb-16 letter-spacing-5 title">聯絡我們</p>
-          <div class="fs-17 pt-3 text-white">
-            <p>讓科技成為您的最佳夥伴</p>
-            <p>立即體驗神奇功能並享限時優惠！</p>
+            <h3 class="fs-9 py-3 fw-bold mb-16 title">聯絡我們</h3>
+            <div class="fs-17 pt-3 text-white">
+              <p>讓科技成為您的最佳夥伴</p>
+              <p>立即體驗神奇功能並享限時優惠！</p>
+            </div>
           </div>
-        </div>
-        <div class="col-md-7 text-white ">
-          <div class="navbar-nav material-icons fs-1 mb-3">
-      emergency
-      </div>
-          <form>
-            <input id="myEmail" type="email" name="email" placeholder="EMAIL" class="w-100 mb-3 font-tw fw-bold py-1 px-3">
-            <textarea id="myOpinion" type="text" placeholder="COMMENTS"
-              class="w-100 mb-3 font-tw fw-bold py-1 px-3 h-100"></textarea>
+          <div class="col-md-7 text-white ">
+            <div class="navbar-nav material-icons fs-1 mb-3">
+              emergency
+            </div>
+            <form>
+              <input id="myEmail" type="email" name="email" placeholder="EMAIL"
+                class="w-100 mb-3 font-tw fw-bold py-1 px-3">
+              <textarea id="myOpinion" type="text" placeholder="COMMENTS"
+                class="w-100 mb-3 font-tw fw-bold py-1 px-3 h-100"></textarea>
               <div class="w-100">
-            <bottom type="submit" class="btn btn-primary rounded-1 w-50 d-block ms-auto"><span class="icon material-symbols-outlined">point_scan</span>送出</bottom>
-
-
-
+                <bottom type="submit" class="btn btn-primary-100 rounded-1 w-50 d-block ms-auto"><span
+                    class="icon material-symbols-outlined">point_scan</span>送出</bottom>
+              </div>
+            </form>
           </div>
-          </form>
-
-
-        </div>
-
-
-
-
         </div>
       </div>
     </div>
@@ -93,14 +86,6 @@
           </div>
         </RouterLink>
       </div>
-
     </div>
-
-
-    <!-- <RouterLink class="nav-link" aria-current="page" to="/product/Diane"> Diane </RouterLink>
-    <RouterLink class="nav-link" aria-current="page" to="/product/Felix"> Felix </RouterLink>
-    <RouterLink class="nav-link" aria-current="page" to="/product/Karina"> Karina </RouterLink>
-    <RouterLink class="nav-link" aria-current="page" to="/product/Vito"> Vito </RouterLink> -->
-
   </main>
 </template>
