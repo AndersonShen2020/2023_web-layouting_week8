@@ -1,1 +1,79 @@
+.index {
+  &-news {
+    @include gradient-r(#28085c 0%, #000 100%);
 
+    h2 {
+      letter-spacing: $spacer * 2.5;
+      margin-right: -$spacer * 2.5;
+      @include media-breakpoint-up(md) {
+        letter-spacing: $spacer * 3;
+        margin-right: -$spacer * 3;
+      }
+    }
+
+    .self-rotate {
+      animation: self-rotate360 10s infinite linear;
+    }
+
+    @keyframes self-rotate360 {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .border-md-end {
+      @include media-breakpoint-up(md) {
+        border-right: 1px solid;
+      }
+    }
+  }
+
+  &-share {
+    @include gradient-r(#000000 0%, #28085c 100%);
+
+    h2 {
+      letter-spacing: $spacer * 2.5;
+      @include media-breakpoint-up(md) {
+        letter-spacing: $spacer * 3;
+      }
+    }
+
+    .circle-sm {
+      @include circle(8px);
+    }
+
+    .circle-lg {
+      @include circle(16px);
+    }
+
+    .swiper-scrollbar-drag {
+      background-color: $white;
+    }
+
+    .swiper-scrollbar {
+      background-color: rgba(225 225 225 / 20%);
+    }
+
+    &-card {
+      min-height: 416px;
+      @include media-breakpoint-up(md) {
+        min-height: 351px;
+      }
+    }
+
+    &-bgText {
+      font-size: $font-size-base * 8;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 40%);
+      color: rgba(255, 255, 255, 0.04);
+
+      @include media-breakpoint-up(lg) {
+        font-size: $font-size-base * 25;
+      }
+    }
+  }
+}
