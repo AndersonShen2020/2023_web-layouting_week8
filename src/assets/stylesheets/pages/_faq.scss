@@ -1,3 +1,7 @@
+.letter-spacing-12 {
+  letter-spacing: $spacer * 3;
+}
+
 .border-dotted-bottom {
   border-bottom: 2px dotted $white;
 }

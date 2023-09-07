@@ -1,0 +1,83 @@
+/* utlis */
+// padding
+.ps-lg-110{
+  @media (min-width: 992px){
+    padding-left: 110px !important;
+  }
+}
+.pe-lg-2d5{
+  @media (min-width: 992px){
+    padding-right: 10px !important;
+  }
+}
+.ps-lg-124{
+  @media (min-width: 992px){
+    padding-left: 124px;
+  }
+}
+
+// margin
+.mx-xxl-n9{
+  @media (min-width: 1400px){
+    margin-right: -36px;
+    margin-left: -36px;
+  }
+}
+.ms-16d25{
+  margin-left: 16.25vw;
+}
+
+// width
+.w-72{
+  width: 72.29166%;
+}
+
+// max
+.maw-1296{
+  max-width: 1296px;
+}
+.maw-1920{
+  max-width: 1920px;
+}
+.mah-232{
+  max-height: 232px;
+}
+
+// letter-spacing
+.letter-spacing-40{
+  letter-spacing: 40px;
+}
+.letter-spacing-md-64{
+  @media (min-width: 768px){
+    letter-spacing: 64px;
+  }
+}
+.letter-sapcing-64{
+  letter-spacing: 64px;
+}
+
+// opacity
+.op-0d5{
+  opacity: .5;
+}
+
+// border-radius
+.border-radius-none{
+  border-radius: 0;
+}
+.border-radius-1{
+  border-radius: .25rem;
+}
+
+// hover
+.contact-link{
+  a:hover{
+    border: 1px solid $white;
+    opacity: .5;
+  }
+}
+.select-link{
+  a:hover{
+    opacity: .5;
+  }
+}
