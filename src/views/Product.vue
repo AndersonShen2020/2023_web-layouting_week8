@@ -1,3 +1,21 @@
+<script setup>
+import { onMounted, watch } from "vue";
+import { useRoute } from "vue-router";
+
+const route = useRoute();
+
+onMounted(() => {
+  console.log(route.params.productName);
+});
+
+watch(
+  () => route.params,
+  () => {
+    console.log(route.params.productName);
+  }
+);
+</script>
+
 <template>
   <main class="product">
     <!-- Navbar -->

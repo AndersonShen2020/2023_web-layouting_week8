@@ -1,0 +1,160 @@
+.aboutus {
+  .fw-350 {
+    font-weight: 350;
+  }
+
+  .fw-500 {
+    font-weight: 500;
+  }
+
+  .fw-900 {
+    font-weight: 900;
+  }
+
+  &-title {
+    @include gradient-r(#28085c 0%, #000 100%);
+    padding-top: 160px;
+    padding-bottom: 160px;
+
+    h3 {
+      letter-spacing: 2.5rem;
+    }
+
+    img {
+      height: 280px;
+      object-fit: cover;
+      object-position: 70% center;
+    }
+
+    @media (max-width: 768px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+
+      .under {
+        width: 100% !important;
+
+        .material-icons {
+          width: 100%;
+          text-align: center;
+        }
+
+        p {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &-content {
+    max-width: 1784px;
+    padding-left: 12px;
+    padding-right: 12px;
+
+    h2 {
+      font-size: 6rem;
+      letter-spacing: 5rem;
+    }
+
+    .top {
+      border-bottom: 1px solid black;
+    }
+
+    .text-focus {
+      font-size: 1rem;
+      color: black;
+      margin-left: 12px;
+      margin-right: 12px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 12px;
+        background: rgba(var(--bs-light-rgb));
+        transform: translate(-8px, 12px);
+        z-index: -1;
+      }
+    }
+
+    @media (max-width: 1440px) {
+      h2 {
+        font-size: 4.5rem;
+        letter-spacing: 3rem;
+      }
+    }
+
+    @media (max-width: 992px) {
+      h2 {
+        font-size: 3rem;
+        letter-spacing: 2rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      h2 {
+        font-size: 2rem;
+        letter-spacing: 1.5rem;
+      }
+    }
+
+    @media (max-width: 375px) {
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  &-slogan {
+    max-width: 1760px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    border-top: 12px solid black;
+
+    @media (max-width: 767px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+
+      img {
+        width: 100% !important;
+      }
+
+      p {
+        width: 100% !important;
+      }
+    }
+  }
+
+  &-recruit {
+    .btn {
+      &:hover {
+        border: 1px solid #7000ff;
+        background-color: #7000ff;
+        color: white;
+      }
+    }
+
+    .icon {
+      vertical-align: text-top;
+      margin-right: 4px;
+    }
+
+    @media (max-width: 768px) {
+      .content {
+        width: 100% !important;
+
+        p {
+          width: 100% !important;
+          margin-bottom: 1.5rem;
+        }
+
+        .btn {
+          width: 100% !important;
+        }
+      }
+    }
+
+  }
+
+}

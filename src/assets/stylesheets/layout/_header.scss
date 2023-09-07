@@ -1,2 +1,65 @@
 header {
+  .fw-500{
+    font-weight: 500;
+  }
+  .icon {
+    vertical-align: text-top;
+    margin-right: 4px;
+  }
+
+  .nav-link:hover {
+    color: $primary-200 !important;
+  }
+
+  .btn {
+    &:hover {
+      background-color: rgba(var(--bs-light-rgb)) !important;
+    }
+  }
+
+  .navbar-toggler {
+    border: none;
+    color: rgba(var(--bs-primary-rgb));
+  }
+
+  @media (max-width: 991px) {
+    .navbar-toggler-icon {
+      background-image: none;
+      font-size: 44px;
+      height: 44px;
+      width: 44px;
+
+      &::before {
+        content: 'menu';
+        color: white;
+      }
+    }
+
+    .navbar-collapse {
+      @include gradient-y($start-color: #7000FF, $end-color: #11002D);
+      position: absolute;
+      border-top: 1px solid white;
+      box-shadow: inset 0px 6px 4px rgb(0 0 0 / 30%);
+      padding: 24px 12px;
+      width: 100%;
+      left: 0;
+      top: 0;
+      transform: translateY(84px);
+      z-index: 999;
+
+      .navbar-nav {
+        gap: 0 !important;
+
+        .nav-item {
+          width: 100%;
+          text-align: center;
+          margin-bottom: 8px;
+
+          &:last-child {
+            width: auto;
+          }
+        }
+      }
+    }
+  }
 }
