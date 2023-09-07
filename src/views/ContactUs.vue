@@ -4,7 +4,7 @@
     class="container-fluid"
     style="background: radial-gradient(50% 50% at 50% 50%, #28085c 0%, #000 100%)"
   >
-    <div class="container maw-1296 pb-20 pt-md-40 pb-md-40">
+    <div class="container maw-1296 pt-15 pb-20 pt-md-40 pb-md-40">
       <div class="row">
         <h2
           class="mb-10 mb-md-4 px-0 fs-11 fs-md-5 letter-spacing-40 letter-sapcing-md-64 fw-black lh-1d5 text-white"
