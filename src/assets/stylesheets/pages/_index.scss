@@ -1,143 +1,280 @@
-.section5{
-  background: $primary-300;
-  .title{
-    letter-spacing: 48px;
-    &::before{
-      content: '';
-      position: absolute;
-      background-color: white;
-      width: 12px;
-      height: 12px;
-      border-radius: 12px;
-      transform: translateY(80px);
+.index {  //m_m
+  &-news {
+    @include gradient-r(#28085c 0%, #000 100%);
+
+    h2 {
+      letter-spacing: $spacer * 2.5;
+      margin-right: -$spacer * 2.5;
+
+      @include media-breakpoint-up(md) {
+        letter-spacing: $spacer * 3;
+        margin-right: -$spacer * 3;
+      }
     }
-    &::after{
-      content: "";
-      position: absolute;
-      background-color: white;
-      width: 124px;
-      height: 12px;
-      border-radius: 12px;
-      transform: translate(-364px, 80px);
+
+    .self-rotate {
+      animation: self-rotate360 10s infinite linear;
     }
-  }
-  .icon{
-    vertical-align: text-top;
-    margin-right: 4px;
+
+    @keyframes self-rotate360 {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .border-md-end {
+      @include media-breakpoint-up(md) {
+        border-right: 1px solid;
+      }
+    }
   }
 
-  @media (max-width: 768px) {
-    .btn{
-      width: 100% !important;
+  &-share {
+    @include gradient-r(#000000 0%, #28085c 100%);
+
+    h2 {
+      letter-spacing: $spacer * 2.5;
+
+      @include media-breakpoint-up(md) {
+        letter-spacing: $spacer * 3;
+      }
+    }
+
+    .circle-sm {
+      @include circle(8px);
+    }
+
+    .circle-lg {
+      @include circle(16px);
+    }
+
+    .swiper-scrollbar-drag {
+      background-color: $white;
+    }
+
+    .swiper-scrollbar {
+      background-color: rgba(225 225 225 / 20%);
+    }
+
+    &-card {
+      min-height: 416px;
+
+      @include media-breakpoint-up(md) {
+        min-height: 351px;
+      }
+    }
+
+    &-bgText {
+      font-size: $font-size-base * 8;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 40%);
+      color: rgba(255, 255, 255, 0.04);
+
+      @include media-breakpoint-up(lg) {
+        font-size: $font-size-base * 25;
+      }
     }
   }
 }
 
-.section6{
-  .card:nth-child(1){
-    .card-body{
-      z-index: 0;
-      &::after{
+.index {  //homer
+  &-contact {
+    background: $primary-300;
+    padding-top: 144px;
+    padding-bottom: 144px;
+
+    h3 {
+      letter-spacing: 3rem;
+    }
+
+    .content {
+      &::before {
         content: '';
         position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url(/2023_web-layouting_week8/src/assets/img/diane_vertical.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        opacity: 0;
-        z-index: -1;
-        transition: 0.5s;
+        background-color: white;
+        width: 12px;
+        height: 12px;
+        border-radius: 12px;
+        transform: translateY(-40px);
       }
-      &:hover{
-        &::after{
-          opacity: 0.5;
-        }
+
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: white;
+        width: 124px;
+        height: 12px;
+        border-radius: 12px;
+        transform: translate(20px, -108px);
+      }
+    }
+
+    textarea {
+      height: 120px;
+    }
+
+    .icon {
+      vertical-align: text-top;
+      margin-right: 4px;
+    }
+
+    @media (max-width: 768px) {
+      padding-top: 60px;
+      padding-bottom: 80px;
+
+      .btn {
+        width: 100% !important;
       }
     }
   }
-  .card:nth-child(2){
-    .card-body{
-      z-index: 0;
-      &::after{
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url(/2023_web-layouting_week8/src/assets/img/felix_vertical.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        opacity: 0;
-        z-index: -1;
-        transition: 0.5s;
-      }
-      &:hover{
-        &::after{
-          opacity: 0.5;
+
+  &-product {
+    .card:nth-child(1) {
+      .card-body {
+        z-index: 0;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-image: url(/2023_web-layouting_week8/src/assets/img/diane_vertical.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          opacity: 0;
+          z-index: -1;
+          transition: 0.5s;
+        }
+
+        &:hover {
+          &::after {
+            opacity: 0.5;
+          }
         }
       }
     }
-  }
-  .card:nth-child(3){
-    .card-body{
-      z-index: 0;
-      &::after{
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url(/2023_web-layouting_week8/src/assets/img/karina_verticalgle.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        opacity: 0;
-        z-index: -1;
-        transition: 0.5s;
-      }
-      &:hover{
-        &::after{
-          opacity: 0.5;
+
+    .card:nth-child(2) {
+      .card-body {
+        z-index: 0;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-image: url(/2023_web-layouting_week8/src/assets/img/felix_vertical.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          opacity: 0;
+          z-index: -1;
+          transition: 0.5s;
+        }
+
+        &:hover {
+          &::after {
+            opacity: 0.5;
+          }
         }
       }
     }
-  }
-  .card:nth-child(4){
-    .card{
-      border-right: 0;
-    }
-    .card-body{
-      z-index: 0;
-      &::after{
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url(/2023_web-layouting_week8/src/assets/img/vito_vertical.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        opacity: 0;
-        z-index: -1;
-        transition: 0.5s;
-      }
-      &:hover{
-        &::after{
-          opacity: 0.5;
+
+    .card:nth-child(3) {
+      .card-body {
+        z-index: 0;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-image: url(/2023_web-layouting_week8/src/assets/img/karina_verticalgle.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          opacity: 0;
+          z-index: -1;
+          transition: 0.5s;
+        }
+
+        &:hover {
+          &::after {
+            opacity: 0.5;
+          }
         }
       }
     }
-  }
-  .title-fs{
-    font-size: 400px;
+
+    .card:nth-child(4) {
+      .card {
+        border-right: 0;
+      }
+
+      .card-body {
+        z-index: 0;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-image: url(/2023_web-layouting_week8/src/assets/img/vito_vertical.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          opacity: 0;
+          z-index: -1;
+          transition: 0.5s;
+        }
+
+        &:hover {
+          &::after {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+
+    .title-fs {
+      font-size: 25rem;
+    }
+
+    @media (max-width: 992px) {
+      .title-fs {
+        font-size: 16rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+
+      .card:nth-child(1),
+      .card:nth-child(2),
+      .card:nth-child(3),
+      .card:nth-child(4) {
+        .card-body {
+          &::after {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 375px) {
+      .title-fs {
+        font-size: 8rem;
+      }
+    }
   }
 
 }
-
-
-
