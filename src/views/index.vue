@@ -57,7 +57,7 @@ const shares = [
 
 const modulesF = [Navigation, Autoplay];
 
-const events = [
+const eventsLg = [
   {
     imageUrl: "swiper-slide.png",
     alt: "01"
@@ -291,7 +291,7 @@ const eventsSm = [
         </Swiper>
       </div>
       <!--   swiper-lg -->
-      <div class="d-none d-md-block container my-8 z-200 pos-relative maw-1760 swiper-outter">
+      <div class="d-none d-md-block container my-8 z-200 pos-relative maw-1760 index-swiper-lg swiper-outter">
         <Swiper
           :modules="modulesF"
           :slides-per-view="1"
@@ -303,7 +303,7 @@ const eventsSm = [
             disableOnInteraction: true
           }"
         >
-          <SwiperSlide v-for="event in events" :key="event.alt">
+          <SwiperSlide v-for="event in eventsLg" :key="event.alt">
             <div class="card swiper-lg-slide-padding pos-relative" style="background: transparent; border: 0">
               <img :src="getAssetsFile(event.imageUrl)" :alt="event.alt" />
               <div class="pos-absolute z-200 container content-fit d-flex flex-column align-items-end justify-content-center pe-10">

@@ -277,42 +277,6 @@
     }
   }
 }
-.me-n32{
-  margin-right: -32px;
-}
-.swiper-lg-slide-padding {
-  padding-right: 13.18%;
-  padding-left: 13.18%;
-}
-
-/*  swiper-btn */
-.swiper-button-prev::after {
-  position: absolute;
-  left: 0;
-  width: 9.375vw;
-  height: 48px;
-  content: "";
-  background: url("https://i.imgur.com/J1IEJnV.png") no-repeat center/contain;
-  background-size: 9.375vw 2.5vw;
-}
-.swiper-button-prev:hover::after {
-  position: absolute;
-  left: 0;
-  width: 9.375vw;
-  height: 48px;
-  content: "";
-  background: url("https://i.imgur.com/GYNbNCj.png") no-repeat center/contain;
-  background-size: 9.375vw 2.5vw;
-}
-.swiper-button-next::after {
-  position: absolute;
-  right: 0;
-  width: 9.375vw;
-  height: 48px;
-  content: "";
-  background: url("https://i.imgur.com/U9JpZhu.png") no-repeat center/contain;
-  background-size: 9.375vw 2.5vw;
-
 
 /* hover */
 .photo:hover{
@@ -700,50 +664,51 @@
   max-width: 1760px;
   margin: 0 auto;
 }
-.swiper {
-  width: 100%;
-  max-height: 560px;
-  margin: 0 auto;
-  [class^="swiper-button-"] {
-    width: 40px;
-    color: transparent;
+.index-swiper-lg{
+  .swiper {
+    width: 100%;
+    max-height: 560px;
+    margin: 0 auto;
+    [class^="swiper-button-"] {
+      width: 40px;
+      color: transparent;
+    }
   }
-}
-.me-n32{
-  margin-right: -32px;
-}
-.swiper-lg-slide-padding {
-  padding-right: 13.18%;
-  padding-left: 13.18%;
-}
+  .me-n32{
+    margin-right: -32px;
+  }
+  .swiper-lg-slide-padding {
+    padding-right: 13.18%;
+    padding-left: 13.18%;
+  }
 
-/*  swiper-btn */
-.swiper-button-prev::after {
-  position: absolute;
-  left: 0;
-  width: 9.375vw;
-  height: 48px;
-  content: "";
-  background: url("https://i.imgur.com/J1IEJnV.png") no-repeat center/contain;
-  background-size: 9.375vw 2.5vw;
-}
-.swiper-button-prev:hover::after {
-  position: absolute;
-  left: 0;
-  width: 9.375vw;
-  height: 48px;
-  content: "";
-  background: url("https://i.imgur.com/GYNbNCj.png") no-repeat center/contain;
-  background-size: 9.375vw 2.5vw;
-}
-.swiper-button-next::after {
-  position: absolute;
-  right: 0;
-  width: 9.375vw;
-  height: 48px;
-  content: "";
-  background: url("https://i.imgur.com/U9JpZhu.png") no-repeat center/contain;
-  background-size: 9.375vw 2.5vw;
+  /*  swiper-btn */
+  .swiper-button-prev::after {
+    position: absolute;
+    left: 0;
+    width: 9.375vw;
+    height: 48px;
+    content: "";
+    background: url("https://i.imgur.com/J1IEJnV.png") no-repeat center/contain;
+    background-size: 9.375vw 2.5vw;
+  }
+  .swiper-button-prev:hover::after {
+    position: absolute;
+    left: 0;
+    width: 9.375vw;
+    height: 48px;
+    content: "";
+    background: url("https://i.imgur.com/GYNbNCj.png") no-repeat center/contain;
+    background-size: 9.375vw 2.5vw;
+  }
+  .swiper-button-next::after {
+    position: absolute;
+    right: 0;
+    width: 9.375vw;
+    height: 48px;
+    content: "";
+    background: url("https://i.imgur.com/U9JpZhu.png") no-repeat center/contain;
+    background-size: 9.375vw 2.5vw;
 
 }
 .swiper-button-next:hover::after {
@@ -760,35 +725,7 @@
 .alphabox-circle {
   max-width: 196px;
   animation-name: rotate;
-  animation-duration: 0s;
-  animation-timing-function: cubic-bezier(0, 0, 1, 1); /* which means linear */
-  animation-iteration-count: infinite;
-  animation-fill-mode: both;
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-.swiper-button-next:hover::after {
-  position: absolute;
-  right: 0;
-  width: 9.375vw;
-  height: 48px;
-  content: "";
-  background: url("https://i.imgur.com/ald6ZaD.png") no-repeat center/contain;
-  background-size: 9.375vw 2.5vw;
-}
-
-/*  animation */
-.alphabox-circle {
-  max-width: 196px;
-  animation-name: rotate;
-  animation-duration: 0s;
+  animation-duration: 10s;
   animation-timing-function: cubic-bezier(0, 0, 1, 1); /* which means linear */
   animation-iteration-count: infinite;
   animation-fill-mode: both;
