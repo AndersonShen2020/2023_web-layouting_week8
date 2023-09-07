@@ -1,13 +1,13 @@
 <template>
-  <header class="navbar navbar-expand-xl bg-primary border-bottom border-white font-tw">
-    <div class="container">
+  <header class="navbar navbar-expand-lg bg-primary font-tw py-lg-5 py-4">
+    <div class="container-xl container-fluid">
       <RouterLink to=".." class="navbar-brand text-white fs-13 p-0 font-en">ALPHABOX+</RouterLink>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon material-symbols-outlined"></span>
       </button>
       <div class="collapse navbar-collapse gradient-y" id="navbarNav">
-        <ul class="navbar-nav gap-10 align-items-center mx-lg-auto">
+        <ul class="navbar-nav fw-500 gap-10 align-items-center mx-lg-auto">
           <li class="nav-item ">
             <RouterLink to="../product/Diane" class="nav-link active text-white">產品</RouterLink>
           </li>
@@ -24,7 +24,7 @@
             <RouterLink to="../ContactUs" class="nav-link active text-white">聯絡我們</RouterLink>
           </li>
         </ul>
-        <ul class="navbar-nav gap-6 align-items-center">
+        <ul class="navbar-nav fw-500 gap-6 align-items-center">
           <li class="nav-item ">
             <RouterLink to="../SignUp" class="nav-link active text-white ">註冊</RouterLink>
           </li>
