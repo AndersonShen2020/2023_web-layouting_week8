@@ -5,7 +5,6 @@
     h2 {
       letter-spacing: $spacer * 2.5;
       margin-right: -$spacer * 2.5;
-
       @include media-breakpoint-up(md) {
         letter-spacing: $spacer * 3;
         margin-right: -$spacer * 3;
@@ -77,6 +76,400 @@
 
       @include media-breakpoint-up(lg) {
         font-size: $font-size-base * 25;
+      }
+    }
+  }
+}
+.index{
+  //homer
+  &-contact {
+    background: $primary-300;
+    padding-top: 144px;
+    padding-bottom: 144px;
+
+    h3 {
+      letter-spacing: 3rem;
+    }
+
+    .content {
+      &::before {
+        content: '';
+        position: absolute;
+        background-color: white;
+        width: 12px;
+        height: 12px;
+        border-radius: 12px;
+        transform: translateY(-40px);
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: white;
+        width: 124px;
+        height: 12px;
+        border-radius: 12px;
+        transform: translate(20px, -108px);
+      }
+    }
+
+    textarea {
+      height: 120px;
+    }
+
+    .icon {
+      vertical-align: text-top;
+      margin-right: 4px;
+    }
+
+    @media (max-width: 768px) {
+      padding-top: 60px;
+      padding-bottom: 80px;
+
+      .btn {
+        width: 100% !important;
+      }
+    }
+  }
+
+  &-product {
+    .card:nth-child(1) {
+      .card-body {
+        z-index: 0;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-image: url(/2023_web-layouting_week8/src/assets/img/diane_vertical.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          opacity: 0;
+          z-index: -1;
+          transition: 0.5s;
+        }
+
+        &:hover {
+          &::after {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+
+    .card:nth-child(2) {
+      .card-body {
+        z-index: 0;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-image: url(/2023_web-layouting_week8/src/assets/img/felix_vertical.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          opacity: 0;
+          z-index: -1;
+          transition: 0.5s;
+        }
+
+        &:hover {
+          &::after {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+
+    .card:nth-child(3) {
+      .card-body {
+        z-index: 0;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-image: url(/2023_web-layouting_week8/src/assets/img/karina_verticalgle.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          opacity: 0;
+          z-index: -1;
+          transition: 0.5s;
+        }
+
+        &:hover {
+          &::after {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+
+    .card:nth-child(4) {
+      .card {
+        border-right: 0;
+      }
+
+      .card-body {
+        z-index: 0;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-image: url(/2023_web-layouting_week8/src/assets/img/vito_vertical.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          opacity: 0;
+          z-index: -1;
+          transition: 0.5s;
+        }
+
+        &:hover {
+          &::after {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+
+    .title-fs {
+      font-size: 25rem;
+    }
+
+    @media (max-width: 992px) {
+      .title-fs {
+        font-size: 16rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+
+      .card:nth-child(1),
+      .card:nth-child(2),
+      .card:nth-child(3),
+      .card:nth-child(4) {
+        .card-body {
+          &::after {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 375px) {
+      .title-fs {
+        font-size: 8rem;
+      }
+    }
+  }
+}
+
+
+
+.index {  //homer
+  &-contact {
+    background: $primary-300;
+    padding-top: 144px;
+    padding-bottom: 144px;
+
+    h3 {
+      letter-spacing: 3rem;
+    }
+
+    .content {
+      &::before {
+        content: '';
+        position: absolute;
+        background-color: white;
+        width: 12px;
+        height: 12px;
+        border-radius: 12px;
+        transform: translateY(-40px);
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: white;
+        width: 124px;
+        height: 12px;
+        border-radius: 12px;
+        transform: translate(20px, -108px);
+      }
+    }
+
+    textarea {
+      height: 120px;
+    }
+
+    .icon {
+      vertical-align: text-top;
+      margin-right: 4px;
+    }
+
+    @media (max-width: 768px) {
+      padding-top: 60px;
+      padding-bottom: 80px;
+
+      .btn {
+        width: 100% !important;
+      }
+    }
+  }
+
+  &-product {
+    .card:nth-child(1) {
+      .card-body {
+        z-index: 0;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-image: url(/2023_web-layouting_week8/src/assets/img/diane_vertical.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          opacity: 0;
+          z-index: -1;
+          transition: 0.5s;
+        }
+
+        &:hover {
+          &::after {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+
+    .card:nth-child(2) {
+      .card-body {
+        z-index: 0;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-image: url(/2023_web-layouting_week8/src/assets/img/felix_vertical.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          opacity: 0;
+          z-index: -1;
+          transition: 0.5s;
+        }
+
+        &:hover {
+          &::after {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+
+    .card:nth-child(3) {
+      .card-body {
+        z-index: 0;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-image: url(/2023_web-layouting_week8/src/assets/img/karina_verticalgle.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          opacity: 0;
+          z-index: -1;
+          transition: 0.5s;
+        }
+
+        &:hover {
+          &::after {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+
+    .card:nth-child(4) {
+      .card {
+        border-right: 0;
+      }
+
+      .card-body {
+        z-index: 0;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-image: url(/2023_web-layouting_week8/src/assets/img/vito_vertical.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          opacity: 0;
+          z-index: -1;
+          transition: 0.5s;
+        }
+
+        &:hover {
+          &::after {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+
+    .title-fs {
+      font-size: 25rem;
+    }
+
+    @media (max-width: 992px) {
+      .title-fs {
+        font-size: 16rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+
+      .card:nth-child(1),
+      .card:nth-child(2),
+      .card:nth-child(3),
+      .card:nth-child(4) {
+        .card-body {
+          &::after {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 375px) {
+      .title-fs {
+        font-size: 8rem;
       }
     }
   }
@@ -371,6 +764,9 @@
 .letter-spacing-22{
   letter-spacing: 22px;
 }
+.letter-spacing-24{
+  letter-spacing: 24px;
+}
 .letter-spacing-sm-24{
   @media (min-width: 375px) {
     letter-spacing: 24px;
@@ -437,7 +833,7 @@
 }
 .h-xxxl-45 {
   @media (min-width: 1760px) {
-    height: 45.833333vw;
+    height: 50.833333vw;
   }
 }
 
@@ -445,76 +841,77 @@
 // 背景2-lg 位置
 .top-md-78 {
   @media (min-width: 768px) {
-    top: 604px;
-    // top: 796px;
+    top: 78.5vw;
   }
 }
-.top-lg-67 {
+.top-lg-69 {
   @media (min-width: 992px) {
-    top: 673px;
-    // top: 865px;
+    top: 69.9vw;
   }
 }
-.top-xl-61 {
+.top-xl-63 {
   @media (min-width: 1200px) {
-    top: 736px;
-    // top: 928px;
+    top: 63.6vw;
   }
 }
-.top-xxl-56 {
+.top-xxl-55 {
   @media (min-width: 1400px) {
-    top: 795px;
-    // top: 987px;
+    top: 55.07142vw;
   }
 }
-.top-xxxl-45 {
-  @media (min-width: 1920px) {
-    top: 880px;
-    // top: 1072px;
-  }
-}
-.h-md-87 {
-  @media (min-width: 768px) {
-    height: 87.5vw;
-  }
-}
-.h-lg-77 {
-  @media (min-width: 992px) {
-    height: 77.45vw;
-  }
-}
-.h-xl-71 {
-  @media (min-width: 1200px) {
-    height: 71vw;
-  }
-}
-.h-xxl-66 {
-  @media (min-width: 1400px) {
-    height: 66.3vw;
-  }
-}
-.h-xxxl-64 {
+.top-xxxl-55 {
   @media (min-width: 1760px) {
-    height: 64.5vw;
+    top: 55vw;
+  }
+}
+.top-4xl {
+  @media (min-width: 1920px) {
+    top: 50.41666vw;
+    // top: 968px;
+  }
+}
+.h-md-105 {
+  @media (min-width: 768px) {
+    height: 140.5vw;
+  }
+}
+.h-lg-87 {
+  @media (min-width: 992px) {
+    height: 100.45vw;
+  }
+}
+.h-xl-79 {
+  @media (min-width: 1200px) {
+    height: 89vw;
+  }
+}
+.h-xxl-78 {
+  @media (min-width: 1400px) {
+    height: 86.3vw;
+  }
+}
+.h-xxxl-65 {
+  @media (min-width: 1760px) {
+    height: 68.5vw;
   }
 }
 .h-4xl {
   @media (min-width: 1920px) {
-    height: 54.8vw;
+    height: 64vw;
   }
 }
 
 /* background-swiper-sm */
 // swiper-sm-bg
 .h-210 {
-  height: 210.9vw;
+  height: 218.9vw;
 }
 .top-sm-474{
-  top: 474.13333vw;
+  top: 524.13333vw;
 }
 .h-smp-190 {
   @media (min-width: 414px) {
-    height: 190vw;
+    height: 250vw;
   }
 }
 .top-smp-465 {
@@ -522,34 +919,34 @@
     top: 465vw;
   }
 }
-.h-sm2p-126 {
+.h-sm2p-152 {
   @media (min-width: 600px) {
-    height: 126vw;
+    height: 152vw;
   }
 }
 .top-sm2p-438 {
   @media (min-width: 600px) {
-    top: 438vw;
+    top: 468vw;
   }
 }
-.h-sm3p-118 {
+.h-sm3p-135 {
   @media (min-width: 667px) {
-    height: 118vw;
+    height: 135vw;
   }
 }
 .top-sm3p-435 {
   @media (min-width: 667px) {
-    top: 435vw;
+    top: 465vw;
   }
 }
-.h-sm4p-110 {
+.h-sm4p-120 {
   @media (min-width: 736px) {
-    height: 110vw;
+    height: 120vw;
   }
 }
 .top-sm4p-428 {
   @media (min-width: 736px) {
-    top: 428vw;
+    top: 468vw;
   }
 }
 
@@ -566,32 +963,32 @@
 // swiper-lg 背景位置調整
 .top-md-89 {
   @media (min-width: 768px) {
-    top: 89vw;
+    top: 140vw;
   }
 }
-.top-lg-74 {
+.top-lg-76 {
   @media (min-width: 992px) {
-    top: 76vw;
+    top: 105vw;
   }
 }
 .top-xl-66 {
   @media (min-width: 1200px){
-    top: 66vw;
+    top: 89vw;
   }
 }
 .top-xxl-53 {
   @media (min-width: 1400px) {
-    top: 53.9vw;
+    top: 72.9vw;
   }
 }
 .top-xxxl-50 {
   @media (min-width: 1760px) {
-    top: 50vw;
+    top: 66vw;
   }
 }
 .top-4xl-43 {
   @media (min-width: 1920px) {
-    top: 43.9vw;
+    top: 54.9vw;
   }
 }
 
@@ -710,16 +1107,18 @@
     background: url("https://i.imgur.com/U9JpZhu.png") no-repeat center/contain;
     background-size: 9.375vw 2.5vw;
 
+  }
+  .swiper-button-next:hover::after {
+    position: absolute;
+    right: 0;
+    width: 9.375vw;
+    height: 48px;
+    content: "";
+    background: url("https://i.imgur.com/ald6ZaD.png") no-repeat center/contain;
+    background-size: 9.375vw 2.5vw;
+  }
 }
-.swiper-button-next:hover::after {
-  position: absolute;
-  right: 0;
-  width: 9.375vw;
-  height: 48px;
-  content: "";
-  background: url("https://i.imgur.com/ald6ZaD.png") no-repeat center/contain;
-  background-size: 9.375vw 2.5vw;
-}
+
 
 /*  animation */
 .alphabox-circle {

@@ -116,12 +116,12 @@ const eventsSm = [
       </div>
       <!--  大背景 2-->
       <div
-        class="d-none d-md-block pos-absolute child-align-horizon-center z-auto h-md-87 h-lg-77 h-xl-71 h-xxl-66 h-xxxl-64 h-4xl top-md-78 top-lg-67 top-xl-61 top-xxl-56 top-xxxl-45"
+        class="d-none d-md-block pos-absolute child-align-horizon-center z-auto h-md-105 h-lg-87 h-xl-79 h-xxl-78 h-xxxl-65 h-4xl top-md-78 top-lg-69 top-xl-63 top-xxl-55 top-xxxl-55 top-4xl"
         style="background: radial-gradient(50% 50% at 50% 50%, #300871 0%, #000 100%)"
       ></div>
       <!-- z-100 swiper 背景-->
       <div
-        class="d-none d-md-block pos-absolute top-md-89 top-lg-74 top-xl-66 top-xxl-53 top-xxxl-50 top-4xl-43 left-n160 right-0 z-100 container maw-1760px"
+        class="d-none d-md-block pos-absolute top-md-89 top-lg-76 top-xl-66 top-xxl-53 top-xxxl-50 top-4xl-43 left-n160 right-0 z-100 container maw-1760px"
       >
         <div class="row">
           <img
@@ -286,6 +286,11 @@ const eventsSm = [
           <SwiperSlide v-for="event in eventsSm" :key="event.alt">
             <div class="card" style="border: 0">
               <img :src="getAssetsFile(event.imageUrl)" :alt="event.alt" />
+              <div class="pos-absolute z-200 content-fit d-flex flex-column align-items-start justify-content-end">
+                <h2 class="text-white fs-5 lh-1d5">01</h2>
+                <p class="text-white fs-15 text-end letter-spacing-24 fw-bold">立體投影技術</p>
+                <p class="text-white fw-bold">透過高科技立體投影技術，讓您感受真實的科技世界。</p>
+              </div>
             </div>
           </SwiperSlide>
         </Swiper>
@@ -328,7 +333,7 @@ const eventsSm = [
     <!-- section2 -->
 
     <!-- section3 -->
-    <section class="index-news">
+    <section class="index-news pos-relative z-200">
       <div class="container pt-15 pt-md-24 pt-lg-40 pb-20 pb-md-10 text-white font-tw">
         <div class="overflow-hidden">
           <h2 class="fs-11 fs-md-9 text-center text-md-start fw-bold mb-10">最新消息</h2>
