@@ -1,5 +1,4 @@
 <template>
-  <div>AboutUs</div>
   <div
     class="container-fluid"
     style="background: radial-gradient(50% 50% at 50% 50%, #28085c 0%, #000 100%)"
