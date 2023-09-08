@@ -97,7 +97,7 @@ const eventsSm = [
       <!-- 小背景 1 -->
       <div
         class="d-md-none pos-absolute z-auto container-fluid h-474 px-0"
-        style="background: linear-gradient(180deg, #7000ff 0%, #11002d 100%); height: 474.13333vw"
+        style="background: linear-gradient(180deg, #7000ff 0%, #11002d 100%);"
       ></div>
       <!-- 大背景 1 -->
       <div
@@ -162,7 +162,7 @@ const eventsSm = [
 
         <div class="row">
           <div class="d-md-none col-12">
-            <p class="text-center text-white fs-16 letter-spacing-4d8 letter-spacing-sm-26 text-indent-6 mb-0">
+            <p class="text-center text-white fs-16 letter-spacing-4d8 letter-spacing-sm-24 text-indent-8 mb-0">
               ALPHABOX+
             </p>
             <p class="text-center text-white font-tw fw-bold letter-spacing-4d8 mb-4">
@@ -192,7 +192,7 @@ const eventsSm = [
           <div class="d-flex flex-md-column w-md-864">
             <div class="d-flex flex-column">
               <p
-                class="d-none d-md-block text-center text-white fs-16 fs-md-13 letter-spacing-22 letter-spacing-xxxl-80 text-indent-8 mb-0 font-style-normal"
+                class="d-none d-md-block text-center text-white fs-16 fs-md-13 letter-spacing-20 letter-spacing-xxxl-80 text-indent-8 mb-0 font-style-normal"
               >
                 ALPHABOX+
               </p>
@@ -286,9 +286,9 @@ const eventsSm = [
           <SwiperSlide v-for="event in eventsSm" :key="event.alt">
             <div class="card" style="border: 0">
               <img :src="getAssetsFile(event.imageUrl)" :alt="event.alt" />
-              <div class="pos-absolute z-200 content-fit d-flex flex-column align-items-start justify-content-end">
+              <div class="pos-absolute z-200 d-flex flex-column align-items-start justify-content-end bottom-0 px-4">
                 <h2 class="text-white fs-5 lh-1d5">01</h2>
-                <p class="text-white fs-15 text-end letter-spacing-24 fw-bold">立體投影技術</p>
+                <p class="text-white fs-15 text-start letter-spacing-24 fw-bold">立體投影技術</p>
                 <p class="text-white fw-bold">透過高科技立體投影技術，讓您感受真實的科技世界。</p>
               </div>
             </div>
