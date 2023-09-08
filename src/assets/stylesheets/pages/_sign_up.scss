@@ -1,0 +1,83 @@
+.sign-up {
+  .letter-spacing-40 {
+    letter-spacing: 40;
+  }
+  .letter-spacing-md-64 {
+    @media (min-width: 768px) {
+      letter-spacing: 64px;
+    }
+  }
+  .me-10px {
+    margin-right: 10px;
+  }
+  .mb-15px {
+    margin-bottom: 15px;
+  }
+
+  /* 設定 checkbox+label 位置和滑鼠觸及反應 */
+  input[type="checkbox"] + label {
+    padding-left: 4px;
+    cursor: pointer;
+  }
+
+  /*隱藏預設的 checkbox */
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  /*利用虛擬元素畫出我要的 checkbox */
+  input[type="checkbox"] + label::before {
+    /*打勾符號代碼*/
+    content: "\2713";
+    display: inline-block;
+    color: transparent;
+    border: 1px solid $white;
+    border-radius: 16%;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+
+    /*  檢查位置*/
+    /*  text-decoration: underline; */
+    font-size: 16px;
+    line-height: 0.667; /*  用 line-height 來調整符號的縱向位置*/ /*預設lh=16*1.5=24 所以要修正1/1.5回去 */
+    text-indent: 3px; /*  校正 pseudoelement 縮排*/
+    vertical-align: 2px;
+  }
+
+  /*在 id for 已掛勾的前提下，畫出 check 之後的樣子*/
+  input[type="checkbox"]:checked + label::before {
+    background-color: transparent;
+    border-color: $white;
+    color: $white;
+  }
+}
+
+.sign-up-modal {
+  p,
+  li {
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    @media (min-width: 576px){
+      top: -24px;
+      right: -24px;
+    }
+    width: 40px;
+    height: 40px;
+  }
+  .modal-content {
+    overflow: visible;
+  }
+  .modal-dialog .close{
+    opacity: 1 !important;
+  }
+  .modal-body{
+    padding: 40px;
+  }
+}
