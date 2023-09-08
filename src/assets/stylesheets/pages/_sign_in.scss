@@ -1,0 +1,18 @@
+.sign-in {
+  .letter-spacing-40{
+    letter-spacing: 40;
+  }
+  .letter-spacing-md-64 {
+    @media (min-width: 768px) {
+      letter-spacing: 64px;
+    }
+  }
+  .me-10px{
+    margin-right: 10px;
+  }
+  .mb-md-93{
+    @media (min-width: 768px){
+      margin-bottom: 93px !important;
+    }
+  }
+}
