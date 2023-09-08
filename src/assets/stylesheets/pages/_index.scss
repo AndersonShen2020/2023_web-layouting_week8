@@ -338,8 +338,8 @@
 }
 
 /* text-indent */
-.text-indent-6{
-  text-indent: 6px;
+.text-indent-8{
+  text-indent: 8px;
 }
 .text-indent-24{
   text-indent: 24px;
@@ -370,8 +370,8 @@
 .letter-spacing-32{
   letter-spacing: 32px;
 }
-.letter-spacing-22{
-  letter-spacing: 22px;
+.letter-spacing-20{
+  letter-spacing: 20px;
 }
 .letter-spacing-24{
   letter-spacing: 24px;
@@ -381,11 +381,7 @@
     letter-spacing: 24px;
   }
 }
-.letter-spacing-sm-26{
-  @media (min-width: 375px){
-    letter-spacing: 26px;
-  }
-}
+
 
 .letter-spacing-md-48{
   @media (min-width: 768px){
@@ -416,7 +412,7 @@
 
 /* background-1-sm */
 .h-474 {
-  height: 474.133333vw;
+  height: 520.133333vw;
 }
 
 /* background-1-lg */
