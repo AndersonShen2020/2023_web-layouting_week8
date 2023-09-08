@@ -4,7 +4,7 @@
     <ul class="list-unstyled d-flex justify-content-center bg-dark py-4 gap-md-6 gap-2 mb-0">
       <li>
         <RouterLink
-          class="btn btn-alphabox"
+          class="btn btn-alphabox fs-lg-15 fs-17"
           :class="{ 'btn-alphabox-active': $route.params.productName === 'Diane' }"
           :to="`/product/Diane`"
         >
@@ -13,7 +13,7 @@
       </li>
       <li>
         <RouterLink
-          class="btn btn-alphabox"
+          class="btn btn-alphabox fs-lg-15 fs-17"
           :class="{ 'btn-alphabox-active': $route.params.productName === 'Felix' }"
           :to="`/product/Felix`"
         >
@@ -22,7 +22,7 @@
       </li>
       <li>
         <RouterLink
-          class="btn btn-alphabox"
+          class="btn btn-alphabox fs-lg-15 fs-17"
           :class="{ 'btn-alphabox-active': $route.params.productName === 'Karina' }"
           :to="`/product/Karina`"
         >
@@ -31,7 +31,7 @@
       </li>
       <li>
         <RouterLink
-          class="btn btn-alphabox"
+          class="btn btn-alphabox fs-lg-15 fs-17"
           :class="{ 'btn-alphabox-active': $route.params.productName === 'Vito' }"
           :to="`/product/Vito`"
         >
