@@ -18,28 +18,28 @@ const modules = [Navigation];
 
 const productInfo = {
   Diane: {
+    name: "diane",
     type: "知識型",
     do: "學術領導/知識分享/智能問答",
-    photo1: "diane_square1.png",
-    photo2: "diane_square2.png"
+    photos: ["diane_square1.webp", "diane_square2.webp"]
   },
   Felix: {
+    name: "felix",
     type: "娛樂型",
     do: "音樂播放/語音互動/遊戲陪伴",
-    photo1: "felix_square1.png",
-    photo2: "felix_square2.png"
+    photos: ["felix_square1.webp", "felix_square2.webp"]
   },
   Karina: {
+    name: "karina",
     type: "生活型",
     do: "健康提醒/日程安排/智能家居",
-    photo1: "karina_square1.png",
-    photo2: "karina_square2.png"
+    photos: ["karina_square1.webp", "karina_square2.webp"]
   },
   Vito: {
+    name: "vito",
     type: "情感型",
     do: "情感識別/心情分析/心靈支持",
-    photo1: "vito_square1.png",
-    photo2: "vito_square2.png"
+    photos: ["vito_square1.webp", "vito_square2.webp"]
   }
 };
 
@@ -61,19 +61,8 @@ onBeforeUpdate(() => {
         :navigation="true"
         ref="swiperDom"
       >
-        <SwiperSlide>
-          <img
-            class="object-fit-cover"
-            :src="getAssetsFile(productInfo[$route.params.productName].photo1)"
-            :alt="`${$route.params.productName}-1`"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            class="object-fit-cover"
-            :src="getAssetsFile(productInfo[$route.params.productName].photo2)"
-            :alt="`${$route.params.productName}-2`"
-          />
+        <SwiperSlide v-for="photo in productInfo[$route.params.productName].photos" :key="photo">
+          <img class="object-fit-cover" :src="getAssetsFile(photo)" :alt="photo" />
         </SwiperSlide>
       </Swiper>
     </div>
