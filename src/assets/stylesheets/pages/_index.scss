@@ -13,6 +13,27 @@
       }
     }
 
+    .nav-link {
+      transition: all ease 0.3s;
+    }
+
+    .nav-link:hover {
+      margin-right: -12px;
+    }
+
+    .col-md-6 .nav-link:hover {
+      padding-left: 12px;
+    }
+
+    &-more {
+      div {
+        transition: all ease 0.3s;
+      }
+      &:hover > div {
+        transform: scale(1.05);
+      }
+    }
+
     .self-rotate {
       animation: self-rotate360 10s infinite linear;
     }

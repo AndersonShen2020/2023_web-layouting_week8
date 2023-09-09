@@ -409,7 +409,7 @@ const eventsSm = [
             </div>
           </li>
         </ul>
-        <RouterLink class="nav-link" aria-current="page" to="/news">
+        <RouterLink class="index-news-more link-white" aria-current="page" to="/news">
           <div class="mx-auto mb-0 mb-md-24 position-relative" style="width: 132px; height: 132px">
             <svg class="overflow-visible self-rotate" viewBox="0 0 132 132">
               <path d="M 0,66 a 66,66 0 1,1 0,1 z" id="circle" fill="none" />
