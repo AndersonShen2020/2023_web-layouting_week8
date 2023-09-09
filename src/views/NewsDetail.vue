@@ -10,7 +10,7 @@
         <div class="col-12 col-md-4 mb-10 mb-md-0">
           <RouterLink class="link-white text-decoration-none mb-2" aria-current="page" to="/news">
             <div class="d-flex align-items-center">
-              <span class="material-icons-outlined fs-4 fs-md-11 scaleX">arrow_outward</span>
+              <span class="material-icons-outlined fs-11 fs-md-11 scaleX">arrow_outward</span>
               <span class="fw-medium pt-1">返回</span>
             </div>
           </RouterLink>
