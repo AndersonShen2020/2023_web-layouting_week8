@@ -8,13 +8,11 @@
       </div>
       <div class="row flex-column flex-md-row">
         <div class="col-12 col-md-4 mb-10 mb-md-0">
-          <RouterLink
-            class="nav-link d-flex align-items-center mb-2"
-            aria-current="page"
-            to="/news"
-          >
-            <span class="material-icons-outlined fs-4 fs-md-11 scaleX">arrow_outward</span>
-            <span class="fw-medium pt-1">返回</span>
+          <RouterLink class="link-white text-decoration-none mb-2" aria-current="page" to="/news">
+            <div class="d-flex align-items-center">
+              <span class="material-icons-outlined fs-11 fs-md-11 scaleX">arrow_outward</span>
+              <span class="fw-medium pt-1">返回</span>
+            </div>
           </RouterLink>
           <div class="overflow-hidden">
             <img class="img-fluid" src="../assets/img/news/news_in.png" alt="產品升級公告" />
@@ -62,7 +60,7 @@
               </a>
             </li>
             <li>
-              <a class="opacity-50" href="#">
+              <a class="opacity-50 disable" href="#">
                 <img src="../assets/img/line_end_arrow_notch.svg" alt="下一則消息" />
               </a>
             </li>

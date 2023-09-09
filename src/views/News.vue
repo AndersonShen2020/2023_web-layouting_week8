@@ -4,7 +4,7 @@
       <h2 class="fs-sm-9 fs-lg-11 fw-black mb-10 mb-lg-15 text-lg-center">最新消息</h2>
       <ul class="list-unstyled">
         <li class="mb-6 mb-lg-15">
-          <RouterLink class="nav-link" aria-current="page" to="/news-detail">
+          <RouterLink class="news-link" aria-current="page" to="/news-detail">
             <div class="row justify-content-center">
               <div class="col-12 col-lg-3">
                 <div class="row align-items-center">
@@ -38,7 +38,7 @@
           </RouterLink>
         </li>
         <li class="mb-6 mb-lg-15">
-          <RouterLink class="nav-link" aria-current="page" to="/news-detail">
+          <RouterLink class="news-link" aria-current="page" to="/news-detail">
             <div class="row justify-content-center">
               <div class="col-12 col-lg-3">
                 <div class="row align-items-center">
@@ -73,7 +73,7 @@
           </RouterLink>
         </li>
         <li class="mb-6 mb-lg-15">
-          <RouterLink class="nav-link" aria-current="page" to="/news-detail">
+          <RouterLink class="news-link" aria-current="page" to="/news-detail">
             <div class="row justify-content-center">
               <div class="col-12 col-lg-3">
                 <div class="row align-items-center">
@@ -110,7 +110,7 @@
           </RouterLink>
         </li>
         <li class="mb-6 mb-lg-15">
-          <RouterLink class="nav-link" aria-current="page" to="/news-detail">
+          <RouterLink class="news-link" aria-current="page" to="/news-detail">
             <div class="row justify-content-center">
               <div class="col-12 col-lg-3">
                 <div class="row align-items-center">
@@ -143,7 +143,7 @@
           </RouterLink>
         </li>
         <li>
-          <RouterLink class="nav-link" aria-current="page" to="/news-detail">
+          <RouterLink class="news-link" aria-current="page" to="/news-detail">
             <div class="row justify-content-center">
               <div class="col-12 col-lg-3">
                 <div class="row align-items-center">
